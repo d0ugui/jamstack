@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img align="center" src="src/assets/tela.png" alt="JAMStack">
 
-## Getting Started
+## 📖 Projeto
 
-First, run the development server:
+Este projeto que foi desenvolvido com base em uma live realizada no dia 15/02 no canal da [Rocketseat](https://www.youtube.com/watch?v=f_mFdccIm3U). A finalidade do projeto é introduzir o conceito de JAMStack que, segundo a definição do próprio site: JAMStack é uma arquitetura projetada com foco em desempenho, segurança e escalabilidade. O conceito é baseado em três pontos principais: JavaScript, API e Markup. A aplicação consiste em um Blog criado com Next.js, utilizando um template do TailwindCSS e consumindo a API GraphQL do GraphCMS utilizando o client uQRL. 
+
+## 🧪 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias e bibliotecas:
+
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [GraphQL](https://graphql.org/)
+- [uRQL](https://github.com/FormidableLabs/urql)
+- [GraphCMS](https://graphcms.com/)
+
+
+## 🚀 Como executar
+
+Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone git@github.com:d0ugui/jamstack.git
+$ cd jamstack
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+É necessário configurar a conexão com o graphcms
+```bash
+$ alterar a url de conexão do client dentro de: src/lib/urql.ts 
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Para iniciá-lo, siga os passos abaixo:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+# Instalar as dependências
+$ yarn or npm
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Iniciar o projeto
+$ yarn start or npm start
+```
 
-## Learn More
+O app estará disponível no seu browser pelo endereço http://localhost:3000/
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Esse projeto está sob a licença MIT.

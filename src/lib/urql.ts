@@ -11,7 +11,7 @@ const isServerSide = typeof window === 'undefined';
 const ssrCache = ssrExchange({ isClient: !isServerSide });
 
 const client = createClient({
-  url: 'https://api-sa-east-1.graphcms.com/v2/ckzqw4tz7010901wc1538000j/master',
+  url: 'Content API do graphCMS',
   exchanges: [dedupExchange, cacheExchange, ssrCache, fetchExchange],
 });
 
